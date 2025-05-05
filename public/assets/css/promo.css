@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: white;
+    padding: 20px;
+}
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        /* Header Section */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .header-title h1 {
+            color: #0e9384;
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .header-subtitle {
+            color: #64748b;
+            font-size: 16px;
+        }
+
+        .add-button {
+            background-color: #0e9384;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Stats Section */
+        .stats-container {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .stat-card {
+            background-color: #f97316;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            flex: 1;
+            min-width: 200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+        }
+
+        .stat-icon {
+            background-color: rgba(255, 255, 255, 0.2);
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .stat-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+
+        /* Search and Filter Section */
+        .search-filter {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .search-bar {
+            flex: 1;
+            position: relative;
+            min-width: 250px;
+        }
+
+        .search-bar input {
+            /* width: 60%; */
+            padding: 12px 12px 12px 40px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 16px;
+            color: #64748b;
+        }
+
+        #inp{
+             width: 30%;
+             padding: 10px 50px;
+            background-color: #f1f5f6;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #94a3b8;
+        }
+
+        .filter-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .filter-dropdown {
+            padding: 12px 20px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            background-color: white;
+            min-width: 120px;
+            font-size: 16px;
+            color: #64748b;
+        }
+
+        .view-toggle {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .view-button {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 8px 16px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            color: #64748b;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .view-button.active {
+            background-color: #0e9384;
+            color: white;
+            border-color: #0e9384;
+        }
+
+        .view-button:hover:not(.active) {
+            background-color: #f8f9fa;
+        }
+
+        /* Promotions Grid & List View */
+        .promotions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .promotions-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .show-list .promotions-grid {
+            display: none; /* Masquer la grille */
+        }
+
+        .show-list .promotions-list {
+            display: flex; /* Afficher la liste */
+        }
+
+        .promotion-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            position: relative;
+            border: 1px solid #e5e7eb;
+        }
+
+        .promotion-card-list {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+            position: relative;
+        }
+
+        .promotion-list-left {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            gap: 20px;
+        }
+
+        .promotion-list-middle {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .promotion-list-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .status-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 5px;
+        }
+
+        .promotion-card-list .status-container {
+            position: static;
+        }
+
+        .status-badge {
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .status-badge.inactive {
+            background-color: #fee2e2;
+            color: #ef4444;
+        }
+
+        .status-badge.active {
+            background-color: #dcfce7;
+            color: #22c55e;
+        }
+
+        .power-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .power-icon.green {
+            background-color: #dcfce7;
+            color: #22c55e;
+        }
+
+        .power-icon.red {
+            background-color: #fee2e2;
+            color: #ef4444;
+        }
+
+        .promotion-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        .promotion-card-list .promotion-avatar {
+            margin-bottom: 0;
+        }
+
+        .promotion-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #1e293b;
+        }
+
+        .promotion-card-list .promotion-title {
+            margin-bottom: 5px;
+        }
+
+        .promotion-date {
+            display: flex;
+            align-items: center;
+            color: #64748b;
+            font-size: 14px;
+            margin-bottom: 15px;
+            gap: 5px;
+        }
+
+        .promotion-card-list .promotion-date {
+            margin-bottom: 5px;
+        }
+
+        .promotion-students {
+            display: flex;
+            align-items: center;
+            color: #64748b;
+            font-size: 14px;
+            margin-bottom: 25px;
+            gap: 5px;
+        }
+
+        .promotion-card-list .promotion-students {
+            margin-bottom: 0;
+        }
+
+        .view-details {
+            color: #f97316;
+            text-decoration: none;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 5px;
+        }
+
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .pagination-button {
+            display: flex;
+            align-items: center;
+            padding: 8px 16px;
+            background-color: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            color: #64748b;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .pagination-button.active {
+            background-color: #f97316;
+            color: white;
+            border-color: #f97316;
+        }
+
+        .pagination-button:hover:not(.active) {
+            background-color: #f8f9fa;
+            color: #f97316;
+        }
+
+        .pagination-button.prev svg {
+            margin-right: 8px;
+        }
+
+        .pagination-button.next svg {
+            margin-left: 8px;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .add-button {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .stats-container {
+                flex-direction: column;
+            }
+
+            .search-filter {
+                flex-direction: column;
+            }
+
+            .filter-container {
+                width: 100%;
+            }
+
+            .filter-dropdown {
+                flex: 1;
+            }
+
+            .view-toggle {
+                flex: 1;
+            }
+            
+            .view-button {
+                flex: 1;
+                text-align: center;
+            }
+
+            .promotion-card-list {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .promotion-list-left, .promotion-list-middle, .promotion-list-right {
+                width: 100%;
+            }
+
+            .promotion-list-right {
+                justify-content: space-between;
+            }
+
+            .pagination {
+                flex-wrap: wrap;
+            }
+            
+            .pagination-button {
+                padding: 6px 12px;
+            }
+        }

@@ -1,0 +1,106 @@
+/* Table Container */
+.table-container {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-top: 20px;
+}
+
+/* Table Styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    background-color: #FF7900;
+    color: white;
+    text-align: left;
+    padding: 15px;
+    font-weight: 500;
+}
+
+.table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+.table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Tags */
+.tag {
+    display: inline-block;
+    padding: 3px 8px;
+    margin: 2px;
+    border-radius: 3px;
+    font-size: 11px;
+    color: white;
+}
+
+.tag-dev { background-color: #4CAF50; }
+.tag-ref { background-color: #2196F3; }
+.tag-aws { background-color: #FF9800; }
+.tag-hackeuse { background-color: #E91E63; }
+
+/* Status Badge */
+.badge {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.badge-active {
+    background-color: #E8F5E9;
+    color: #4CAF50;
+}
+
+.badge-inactive {
+    background-color: #FFEBEE;
+    color: #F44336;
+}
+
+.badge i {
+    font-size: 8px;
+}
+
+/* Actions Menu */
+.action-menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.action-button {
+    background: none;
+    border: none;
+    color: #64748b;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #f1f5f9;
+    color: #FF7900;
+}
+
+.menu-dot {
+    display: flex;
+    gap: 5px;
+}

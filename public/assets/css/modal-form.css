@@ -1,0 +1,183 @@
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+#promotion-name{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+#taf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+#referentiel-search{
+    width: 100%;
+    padding: 10px 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+.file-upload-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#start-date, #end-date{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+.modal-description {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Style du formulaire d'ajout de promotion */
+
+.promotion-form {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #cabfbf;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #1e293b;
+    font-weight: 500;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.date-input-container {
+    position: relative;
+}
+
+.calendar-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.error-message {
+    color: #ef4444;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.file-upload-container:hover {
+    border: 2px dashed #232425;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.upload-button {
+    background-color: #0e9384;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.upload-text {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.file-restrictions {
+    color: #94a3b8;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.referentiels-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.referentiel-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.cancel-button {
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    color: #64748b;
+    cursor: pointer;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #0e9384;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .referentiels-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Ajustements pour le modal existant */
+.modal-content {
+    width: 500px;
+    max-width: 90%;
+    padding: 24px;
+}

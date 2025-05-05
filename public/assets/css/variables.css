@@ -1,0 +1,21 @@
+:root {
+  /* Couleurs */
+  --primary-color: #2a9d8f;
+  --secondary-color: #6c757d;
+  --background-color: #f5f7f8;
+  --border-color: #e4e6e8;
+  
+  /* Espacement */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  
+  /* Border radius */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  
+  /* Transitions */
+  --transition-default: all 0.3s ease;
+}
