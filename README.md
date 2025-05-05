@@ -1,2 +1,2 @@
-#Admin@gmail.com
+#admin@gmail.com
 #Admin123
